@@ -34,7 +34,7 @@ The bot will act under the name Gu'raath, a caveman that works at a call center 
 
 #
 
-## Installation & running chatbot
+### Installation & running chatbot
 
 A .env.example is provided and can be used as a template.
 
