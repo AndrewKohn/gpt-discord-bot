@@ -28,13 +28,13 @@ The bot will act under the name Gu'raath, a caveman that works at a call center 
   &nbsp;
   <img height="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="node.js icon" title="Node.js"/> 
   &nbsp;
-  <img height="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-plain.svg" />
+  <img height="36px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-plain.svg" alt="Discord.js icon" title="Discord.js" />
           
 </div>
 
 #
 
-## Installation & running chatbot
+### Installation & running chatbot
 
 A .env.example is provided and can be used as a template.
 
