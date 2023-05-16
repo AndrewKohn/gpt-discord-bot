@@ -29,33 +29,33 @@ client.once('ready', () => {
   console.log(`${client.user.tag} is online!`);
 });
 
-// client.on('messageCreate', message => {
-//   // Direct messages
-//   if (message.channel.type === 1) {
-//     try {
-//       createBotMessage(client, message);
-//     } catch (err) {
-//       console.log(err);
-//     }
-//   }
+client.on('messageCreate', message => {
+  // Direct messages
+  if (message.channel.type === 1) {
+    try {
+      createBotMessage(client, message);
+    } catch (err) {
+      console.log(err);
+    }
+  }
 
-//   // Channel messages
-//   if (message.channel.id !== CHANNEL_ID) return; // Assigned to specific server channel, comment this line to have it respond to all channels in server
-//   try {
-//     createBotMessage(client, message);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// });
+  // Channel messages
+  if (message.channel.id !== CHANNEL_ID) return; // Assigned to specific server channel, comment this line to have it respond to all channels in server
+  try {
+    createBotMessage(client, message);
+  } catch (err) {
+    console.log(err);
+  }
+});
 
 // toggle comment with other messageCreate to switch consuming openAI tokens
-let messageCount = 1;
-client.on('messageCreate', message => {
-  if (message.author.bot) return; // Ignore self and other bot messages
-  if (message.content.startsWith('!') || message.content.startsWith('/'))
-    return; // ignores commands if the message starts with prefix
-  if (message.channel.id !== CHANNEL_ID) return; // Assigned to specific server channel, comment this line to have it respond to all channels in server
-  message.reply(`${messageCount++}    |  "${message}"`);
-});
+// let messageCount = 1;
+// client.on('messageCreate', message => {
+//   if (message.author.bot) return; // Ignore self and other bot messages
+//   if (message.content.startsWith('!') || message.content.startsWith('/'))
+//     return; // ignores commands if the message starts with prefix
+//   if (message.channel.id !== CHANNEL_ID) return; // Assigned to specific server channel, comment this line to have it respond to all channels in server
+//   message.reply(`${messageCount++}    |  "${message}"`);
+// });
 
 client.login(TOKEN);
