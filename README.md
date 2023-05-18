@@ -3,7 +3,7 @@
 <h3 align="center">Andrew Kohn</h3>
 
 <div align='center'>
-  <img src='assets/gpt-bot-readme-img.png' />
+  <img src='src/assets/gpt-bot-readme-img.png' />
 </div>
 
 <div align="center">
