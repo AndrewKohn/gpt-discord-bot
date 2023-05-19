@@ -1,4 +1,4 @@
-<h1 align="center">apk-portfolio</h1>
+<h1 align="center">gpt-discord-bot</h1>
 
 <h3 align="center">Andrew Kohn</h3>
 
