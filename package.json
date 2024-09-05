@@ -2,18 +2,18 @@
   "name": "gpt-discord-bot",
   "version": "1.0.0",
   "description": "A discord OpenAI chat bot",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "serve": "nodemon src/Index.js"
+    "serve": "nodemon src/main.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^14.10.2",
-    "djs-commander": "^0.0.45",
-    "dotenv": "^16.0.3",
-    "nodemon": "^2.0.22",
-    "openai": "^3.2.1"
+    "discord.js": "^14.16.1",
+    "djs-commander": "^0.0.50",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.4",
+    "openai": "^4.57.2"
   }
 }
