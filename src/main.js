@@ -7,6 +7,7 @@ const { CommandHandler } = require("djs-commander");
 const { OpenAI } = require("openai");
 const { createBotMessage } = require("./createBotMessage");
 const { CHANNELS, MODEL, clientConfig } = require("./settings");
+const http = require("http");
 
 // NOTE: channels and model type can be in the settings.js
 const CONFIG = {
