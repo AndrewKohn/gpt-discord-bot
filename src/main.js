@@ -35,6 +35,8 @@ client.once("ready", () => {
 
 // CREATE MESSAGE
 client.on("messageCreate", (message) => {
+    console.log(message);
+
     // Direct messages
     if (message.channel.type === 1) {
         try {
@@ -54,3 +56,13 @@ client.on("messageCreate", (message) => {
 });
 
 client.login(CONFIG.TOKEN);
+
+const PORT = process.env.PORT || 3000;
+http
+    .createServer((req, res) => {
+        res.writeHead(200, { "Content-Type": "text/plain" });
+        res.end("GPT Bot is running!\n");
+    })
+    .listen(PORT, () => {
+        console.log(`Server is listening on port ${PORT}`);
+    });
