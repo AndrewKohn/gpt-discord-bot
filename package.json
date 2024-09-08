@@ -4,7 +4,7 @@
   "description": "A discord OpenAI chat bot",
   "main": "main.js",
   "scripts": {
-    "serve": "nodemon src/main.js"
+    "start": "nodemon src/main.js"
   },
   "keywords": [],
   "author": "",
